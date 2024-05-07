@@ -124,9 +124,22 @@ export function ComingSoon(): JSX.Element {
           </nav>
         </div>
       </header>
-      <main className="flex-1 flex items-center justify-center bg-gray-100 dark:bg-gray-900 py-12">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mx-auto max-w-3xl text-center space-y-8">
+      
+      <main className="flex-1 flex items-center justify-center bg-gray-100 dark:bg-gray-900 py-12 relative">
+  <div className="absolute inset-0 z-0">
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-full object-cover"
+    >
+      <source src="/bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div className="container mx-auto px-4 md:px-6 z-10">
+    <div className="mx-auto max-w-3xl text-center space-y-8">
             <div className="space-y-4">
               <h1 className="text-6xl font-bold tracking-tighter text-gray-900 dark:text-gray-100">FlexiFlowPay</h1>
               <p className="text-2xl text-gray-600 dark:text-gray-400">The future of payment gateways is here.</p>
