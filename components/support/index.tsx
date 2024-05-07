@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { OrbitProgress } from 'react-loading-indicators';
+import Link from 'next/link';
 
 const SupportPage = () => {
   const [formData, setFormData] = useState({
@@ -69,8 +70,11 @@ const SupportPage = () => {
         </div>
       )}
       <div className="max-w-3xl mx-auto p-8 bg-white rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold mb-4">Support Us</h1>
-        <p className="mb-8">
+        <h1 className="text-3xl text-black font-bold mb-4">Support Us</h1>
+        <Link href="/">
+            <img src="/logo/logo-no-background.png" alt="FlexiFlowPay" className="h-10 w-auto cursor-pointer" />
+        </Link>
+        <p className="mb-8 text-black">
           If you have any questions or need assistance, please feel free to
           contact us using the form below.
         </p>

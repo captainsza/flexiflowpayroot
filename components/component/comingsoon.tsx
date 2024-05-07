@@ -97,7 +97,9 @@ export function ComingSoon(): JSX.Element {
     <div className="flex flex-col min-h-screen">
       <header className="bg-gray-900 text-gray-100 py-4 px-6">
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">FlexiFlowPay</div>
+        <Link href="/">
+            <img src="/logo/logo-no-background.png" alt="FlexiFlowPay" className="h-10 w-auto cursor-pointer" />
+        </Link>
           <nav>
             <ul className="flex space-x-4">
               {/* <li>
