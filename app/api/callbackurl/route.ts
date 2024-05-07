@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // Connect to MongoDB
 mongoose
-  .connect('mongodb+srv://captainempire786:9jEulG15WpTIHwoQ@flexsflowpay.dybcibc.mongodb.net/Payment', {
+  .connect('mongodb://localhost:27017/flexipaygateway', {
   })
   .then(() => console.log('MongoDB connected'))
   .catch((err:any) => console.error('MongoDB connection error:', err));
