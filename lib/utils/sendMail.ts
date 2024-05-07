@@ -14,8 +14,8 @@ const sendEmail = async (data: any) => {
     });
 
     const selfMailOptions = {
-      from: `FlexiFlowPay<${process.env.EMAIL_SERVER_USER}>`,
-      to: process.env.EMAIL_SERVER_USER,
+      from: `FlexiFlowPay<${process.env.MAIL_USERNAME}>`,
+      to: process.env.MAIL_USERNAME,
       subject: `📬 New query from ${name} - ${subject}`,
       html: `
         <body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
@@ -41,7 +41,7 @@ const sendEmail = async (data: any) => {
     await transport.sendMail(selfMailOptions);
 
     const userMailOptions = {
-      from: `FlexiFlowPay<${process.env.EMAIL_SERVER_USER}>`,
+      from: `FlexiFlowPay<${process.env.MAIL_USERNAME}>`,
       to: email,
       subject: '🎉 We received your query',
       html: `
