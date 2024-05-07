@@ -87,7 +87,7 @@ export function ComingSoon(): JSX.Element {
 
       return () => clearInterval(timer);
     }
-  }, [hasMounted]);
+  }, [getEndTime, hasMounted]);
 
   // Only render the countdown on the client side
   if (!hasMounted) {
