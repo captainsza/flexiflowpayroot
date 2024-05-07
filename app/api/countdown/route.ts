@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server';
 // Connect to MongoDB
 mongoose
   .connect('mongodb://localhost:27017/flexipaygateway', {
-    // Add any necessary options here
+    serverSelectionTimeoutMS: 30000, // Increase the timeout to 30 seconds (adjust as needed)
   })
   .then(() => console.log('MongoDB connected'))
   .catch((err: any) => console.error('MongoDB connection error:', err));
