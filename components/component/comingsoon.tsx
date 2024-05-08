@@ -74,7 +74,7 @@ export function ComingSoon(): JSX.Element {
 </div>
         <Link
           className="rounded-lg bg-white px-6 py-3 text-lg font-medium text-[#6366F1] transition-colors hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#6366F1] sm:text-xl md:text-2xl"
-          href="#"
+          href="/contactUs"
         >
           Contact Us
         </Link>
