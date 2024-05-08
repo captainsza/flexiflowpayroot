@@ -51,7 +51,7 @@ export function ComingSoon(): JSX.Element {
         <div className="container mx-auto px-4 md:px-6 z-10">
         <div className="flex flex-col items-center space-y-8">
           <div className="text-center">
-          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">FlexFlowPay</h1>
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl">FlexiFlowPay</h1>
           <p className="mt-4 text-lg font-medium sm:text-xl md:text-2xl">Coming Soon</p>
         </div>
         <div className="flex items-center space-x-4 rounded-lg bg-white/10 px-6 py-4 text-2xl font-medium sm:text-3xl md:text-4xl">
