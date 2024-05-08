@@ -31,11 +31,11 @@ export default function Home() {
                   Pricing
                 </a>
               </li> */}
-              <li>
+              {/* <li>
                 <a className="hover:text-gray-400" href="#">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
@@ -43,7 +43,7 @@ export default function Home() {
       <SupportPage/>
       <footer className="bg-gray-900 text-gray-100 py-6 px-6">
         <div className="container mx-auto flex justify-between items-center">
-          <div>© 2023 FlexiFlowPay. All rights reserved.</div>
+          <div>© 2024 FlexiFlowPay. All rights reserved.</div>
           <nav>
             <ul className="flex space-x-4">
               <li>
