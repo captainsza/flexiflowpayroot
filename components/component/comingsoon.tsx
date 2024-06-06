@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function ComingSoon(): JSX.Element {
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const targetDate = new Date('2024-05-25T00:00:00');
+  const targetDate = new Date('2025-05-25T00:00:00');
   const [remainingTime, setRemainingTime] = useState(targetDate.getTime() - new Date().getTime());
 
   useEffect(() => {
